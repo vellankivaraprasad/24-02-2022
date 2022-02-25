@@ -1,0 +1,27 @@
+n=int(input('enter n numbers:'))
+l=[]
+for i in range(n):
+    x=int(input())
+    l.append(x)
+count=0
+for n in range(2,n):
+    for i in range(2,n):
+        if(n%i==0):
+            break
+    else:
+        count = count + 1
+print("Number of prime numbers between given numbers:",count)
+
+
+out put:
+
+enter n numbers:8
+1
+5
+6
+7
+9
+4
+5
+3
+Number of prime numbers between given numbers: 4
